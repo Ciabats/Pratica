@@ -1,34 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mario Rossi</title>
+    <style>
+        table{
+            border-collapse:collapse;
+        }
+
+        tr, td{
+            border: 2px solid black;
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- Intestazione: nome, presentazione breve e menu di navigazione interno -->
     <header>
         <h1>Mario Rossi</h1>
         <nav>
             <p><strong>Studente Full-Stack</strong> - corso Epicode 2026</p>
-        
+
             <ul>
                 <li><a href="#chi-sono">Chi sono</a></li>
                 <li><a href="#competenze">Competenze</a></li>
+                <li><a href="#esperienze">Esperienze</a></li>
                 <li><a href="#progetti">Progetti</a></li>
-                <li><a href="#contatti">Contatti</a></li>
+                <li><a href="#contattami">Contattami</a></li>
             </ul>
-            </nav>
-        <hr>
+        </nav>
+        <hr />
     </header>
+
+    <!-- Blocco 1: presentazione personale -->
     <main>
         <h2 id="chi-sono">Chi sono</h2>
 
-        <p>Mi chiamo Mario Rossi e sto imparando a programmare. Studio sviluppo web con <strong>Epicode</strong> e ogni giorno aggiungo qualcosa di nuovo a questa pagina.
-            Mi piace lavorare in gruppo, leggere documentazione tecnica e capire come funzionano le cose.</p>
+        <img src="assets/WA_1786564436959.jpeg" alt="Foto profilo" width="200" height="200">
 
-        <p>Vivo a Milano. Ho una formazione precedente in <em>lettere</em> e ora sto cambiando settore. Cerco un prmio ruolo come sviluppatore frontend. </p>
+        <p>
+            Mi chiamo Mario Rossi e sto imparando a programmare. Studio sviluppo web
+            con <strong>Epicode</strong> e ogni giorno aggiungo qualcosa di nuovo a
+            questa pagina. Mi piace lavorare in gruppo, leggere documentazione
+            tecnica e capire come funzionano le cose.
+        </p>
 
-        <h2 id="#competenze">Competenze</h2>
+        <p>
+            Vivo a Milano. Ho una formazione precedente in <em>lettere</em> e ora
+            sto cambiando settore. Cerco un prmio ruolo come sviluppatore frontend.
+        </p>
+
+        <!-- Blocco 2: tecnologie che lo studente sta imparando -->
+        <h2 id="competenze">Competenze</h2>
 
         <p>Le tecnologie che vedo durante le prime settimane di corso.</p>
 
@@ -39,33 +65,128 @@
             <li>Visual Studio Code - editor di lavoro</li>
         </ul>
 
-        <h2 id="#progetti">Progetti</h2>
+        <!-- Blocco 3: lista dei esperienze -->
+         <section>
+            <h2 id="esperienze">Esperienze</h2>
+
+            <p>Un riepilogo del mio percorso formativo e lavorativo recente.</p>
+
+            <table>
+                <caption>
+                    Esperienze formative e lavorative
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Anno</th>
+                        <th scope="col">Ruolo</th>
+                        <th scope="col">Azienda/Scuola</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2026</td>
+                        <td>Studente Full Stack</td>
+                        <td>Epicode</td>
+                    </tr>
+                    <tr>
+                        <td>2024-2025</td>
+                        <td>Libraio</td>
+                        <td>Libreria Centrale, Milano</td>
+                    </tr>
+                    <tr>
+                        <td>2018-2022</td>
+                        <td>Studente di Lettere</td>
+                        <td>Università degli Studi di Milano</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Blocco 4: lista dei progetti -->
+        <h2 id="progetti">Progetti</h2>
 
         <p>I lavori fatti durante le prime settimane di corso.</p>
 
         <h4>Pagina ricetta</h4>
 
-        <p>Una pagina con titolo e procedura. Esercizio di markup semantico applicato a un contenuto reale.</p>
+        <p>
+            Una pagina con titolo e procedura. Esercizio di markup semantico
+            applicato a un contenuto reale.
+        </p>
 
-        <a href="javascript:void(0)">Vedi su GitHub</a>
+        <a href="javascript:void(0)" target="_blank" >Vedi su GitHub</a>
 
         <h4>Card di presentazione</h4>
 
-        <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML</p>
+        <p>
+            Un biglietto digitale con nome, ruolo e link ai social. Esercizio di
+            sintesi sulla struttura HTML
+        </p>
 
-        <a href="javascript:void(0)">Vedi su GitHub</a>
+        <a href="javascript:void(0)" target="_blank">Vedi su GitHub</a>
+    
         
-    </main>
-    <footer>
-        <h2 id="#contatti">Contatti</h2>
-        <p>Sono preesente su queste piattaforme professionali, dove puoi seguire i miei progetti e contattarmi</p>
+        <!-- Blocco 5: contatti pubblici -->
+        <h2 id="contattami">Contattami</h2>
+        <p>
+            Sono preesente su queste piattaforme professionali, dove puoi seguire i
+            miei progetti e contattarmi
+        </p>
+
+        <!-- creo form per la raccolta dati -->        
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <br>
+            <input type="text" id="name" placeholder="Il tuo nome" name="name" required />
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" placeholder="tu@esempio.com"  name="email" required />
+            <br>
+            <br> 
+            <label for="motivo">Motivo del contratto</label>
+            <br>
+            <select name="motivo" id="motivo">
+                <option value="PL">Proposta di lavoro</option>
+                <option value="CT">Consulenza tecnica</option>
+                <option value="RP">Revisione progetto</option>
+                <option value="APE">Aperitivinooo</option>
+            </select>
+            <br>
+            <br>
+            <label for="date">Data preferita per la risposta</label>
+            <br>
+            <input type="date" id="data" name="data"/>
+            <br>
+            <br>
+            <label for="messaggio">Messaggio</label>
+            <br>
+            <textarea name="messaggio" id="messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+            <br>
+            <input type="checkbox" id="accettazione" name="accettazione" required/>
+            <label for="accettazione">Accetto di essere ricontattato all'indirizzo indicato</label>
+            <br>
+            <button type="submit">Invia</button>
+        </form>
         <nav>
-            <p>Profilo GitHub: <a href="https://github.com/Ciabats?tab=overview&from=2026-09-01&to=2026-09-30">github.com/mario-rossi</a></p>
-            <p>Profilo LinkedIn: <a href="javascript:void(0)">linkedin.com/in/mario-rossi</a></p>
+            <p>
+                Profilo GitHub:
+                <a
+                    href="https://github.com/Ciabats?tab=overview&from=2026-09-01&to=2026-09-30">github.com/mario-rossi</a>
+            </p>
+            <p>
+                Profilo LinkedIn:
+                <a href="javascript:void(0)" target="_blank">linkedin.com/in/mario-rossi</a>
+            </p>
+
         </nav>
+    </main>
+    <!-- Piede pagina con copyright -->
+    <footer>
         <p>@2026 Mario Rossi</p>
     </footer>
 
 </body>
-</html>
 
+</html>
