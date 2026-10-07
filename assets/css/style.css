@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: black;
+
+
+
+}
+
+#site-header {
+    background-image: url(../img/pexels-mattia-sacco-306415812-33811723.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#site-header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+#site-header h1{
+    color: white;
+}
+
+.tagline {
+    color: #F44A4A;
+    font-style: italic;
+}
+
+nav a {
+    color: hsl(67, 98%, 26%);
+    font-weight: bold;
+    line-height: 3;
+}
+
+nav a:hover {
+    color: #D60076;
+    background-color: #FFDECF;
+
+}
+
+nav ul {
+    color: white;
+}
+
+h2,
+h3 {
+    color: #1F3D7A;
+    font-size: 2em;
+    text-align: left
+}
+
+#chi-sono {
+    background-color: #ffffff;
+    text-align: justify;
+}
+
+#chi-sono p:first-of-type {
+    font-style: italic;
+    font-size: 2rem;
+    color: #2D3953;
+}
+
+.skill-list li:nth-child(odd) {
+    background-color: #F5F7FB;
+}
+
+.skill-list li:first-child {
+    font-weight: bold;
+}
+
+.project:nth-of-type(odd) {
+    background-color: #FBF8EF;
+}
+
+.project:nth-of-type(even) {
+    background-color: #FFFFFF
+}
+
+label {
+    font-weight: bold;
+    color: #1F3D7A;
+}
+
+#accettazione {
+    margin: 0;
+
+}
+
+input:not([type="checkbox"]),
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    width: 60%;
+    background-color: #F5F7FB;
+}
+
+input:focus,
+textarea:focus {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+button {
+    color: antiquewhite;
+    background-color: hsl(220, 60%, 30%);
+    font-weight: bold;
+    width: 30%;
+}
+
+button:hover {
+    color: hsl(220, 60%, 45%);
+}
+
+#side-footer {
+    background-color: #172136;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    border: 2px solid black;
+}
