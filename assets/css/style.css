@@ -33,27 +33,11 @@ main{
     font-size: 3rem;
     font-weight: bold;
     font-style: italic;
+
+}
+
+#site-header h1{
     color: white;
-    text-shadow: 0 2px 4 px rgba(0, 0, 0.2);
-
-}
-
-#site-header nav a{
-    display: inline-block;
-    padding: 8px 16px;
-    margin: 0 4px;
-    border-radius: 4px;
-}
-
-#site-header nav{
-    text-align: center;
-}
-
-#site-header nav ul{
-    display: inline-block;
-    color: white;
-    list-style: none;
-   
 }
 
 #site-header nav ul li{
